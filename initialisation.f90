@@ -29,9 +29,9 @@ end do
 do i = 0, num_bac-1
 
 call random_number(t)
-vx(i) = 1000*t
+vx(i) = 10*t
 call random_number(t)
-vy(i) = 1000*t
+vy(i) = 10*t
 end do
 
 

@@ -4,7 +4,7 @@ module para
 implicit none
 
 integer:: n,m,i,j,k, iter
-integer, parameter:: num_bac = 30
+integer, parameter:: num_bac = 100
 integer:: neighbours(0:num_bac-1)
 real(8):: x(0:num_bac-1),y(0:num_bac-1) , rad(0:num_bac-1)
 real(8):: vx(0:num_bac-1), vy(0:num_bac-1)
@@ -36,7 +36,7 @@ end do
 close(9)
 
 
-do iter = 0,100             !Do how many unit of time needed , 1 unit  = dt 
+do iter = 0,1000             !Do how many unit of time needed , 1 unit  = dt 
 
 	call motion
 	do j = 0, num_bac -1
