@@ -39,9 +39,9 @@ close(9)
 do iter = 0,1000             !Do how many unit of time needed , 1 unit  = dt 
 
 	call motion
-	do j = 0, num_bac -1
-	print*, iter, j, x(j), y(j), vx(j), vy(j) 
-	end do
+	!do j = 0, num_bac -1
+	!print*, iter, j, x(j), y(j), vx(j), vy(j) 
+	!end do
 end do
 call neighbour
 

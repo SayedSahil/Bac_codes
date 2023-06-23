@@ -47,11 +47,22 @@ end do
 !==========================================
 
 do i = 0, num_bac-1
+if(vx_avg(i)>1.0e-15) then
 vx(i) = vx_avg(i)
+end if
+if(vy_avg(i)> 1.0e-15) then 
 vy(i) = vy_avg(i)
-
+end if
 x(i) = x(i)+ vx(i)*dt
+if (abs(x(i))>lx) then
+x(i) = x(i)-floor(x(i)/lx)*lx
+end if
 y(i) = y(i)+ vy(i)*dt
+if (abs(y(i))>ly) then
+y(i) = y(i)-floor(y(i)/ly)*ly
+end if
+
+
 !print*, iter, x(i),y(i),vx(i),vy(i)
 
 end do

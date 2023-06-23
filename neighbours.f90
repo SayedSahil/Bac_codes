@@ -24,7 +24,7 @@ elseif ( dy< -1*ly/2) then
 dy = dy +ly
 end if
 
-if (dr < 2*bac_size) then
+if (dr < rb) then
 neighbours(i) = neighbours(i)+1
 end if
 end if
