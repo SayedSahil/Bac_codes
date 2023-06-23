@@ -24,7 +24,7 @@ elseif ( dy< -1*ly/2) then
 dy = dy +ly
 end if
 
-if (dr < rb) then
+if (dr < 2*rad(i)) then
 neighbours(i) = neighbours(i)+1
 end if
 end if
